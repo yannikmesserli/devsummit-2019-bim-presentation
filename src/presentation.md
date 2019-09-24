@@ -1,24 +1,31 @@
-<!-- .slide: data-background="../images/bg-1.png" -->
+<!-- .slide: data-background="./images/bg-1.png" -->
 
-## Your presentation
+<h2 style="font-size: 2em;">BIM and Building Scene Layer</h2>
 
-#### You can try it
-
-- Clone this repo
-- Remove git
-- Edit `src/presentation.md`
-- `npm run serve`
+By &Ouml;zg&uuml;r Ertac &amp; Yannik Messerli
 
 ---
 
-<!-- .slide: data-background="../images/bg-3.png" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
+
+# Agenda
+
+- Introduction to BIM and Revit
+- Revit-as-a-service
+- Introduction to ArcGIS Javascript API
+- Using the BuildingSceneLayer
+- Go beyond (the walls)
+
+---
+
+<!-- .slide: data-background="./images/bg-3.png" -->
 
 # A slide template
 
 
     ---
 
-    <!-- .slide: data-background="../images/bg-3.png" -->
+    <!-- .slide: data-background="./images/bg-3.png" -->
 
     # A slide template
 
