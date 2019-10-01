@@ -18,6 +18,18 @@ By &Ouml;zg&uuml;r Ertac &amp; Yannik Messerli
 
 ---
 
+<!-- .slide: data-background="./images/bg-2.png" -->
+
+# Building Information Modeling (BIM)
+
+BIM is a digital representation of physical and functional chracteristics of a facility.
+A BIM object is a combination of many things:
+- Design
+- Geometry for physical chracteristics
+- ..
+
+---
+
 <!-- .slide: data-background="./images/bg-3.png" -->
 
 # A slide template
