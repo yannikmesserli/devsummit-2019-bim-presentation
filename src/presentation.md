@@ -196,7 +196,7 @@ Simple steps to use the API:
 1. Import the service
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none"  -->
 ## Creating basic HTML file
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
@@ -219,11 +219,13 @@ Simple steps to use the API:
       &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-    </code></pre>
+    </code>
+    <div style="clear: both; height: 30px;"></div>
+  </pre>
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none"  -->
 ## Reference the ArcGIS API for JavaScript
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
@@ -246,11 +248,11 @@ Simple steps to use the API:
       &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-    </code></pre>
+    </code><div style="clear: both; height: 30px;"></div></pre>
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
 ## Instantiate the webscene
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
@@ -288,7 +290,7 @@ Simple steps to use the API:
       &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-    </code></pre>
+    </code><div style="clear: both; height: 30px;"></div></pre>
 </div>
 
 ---
