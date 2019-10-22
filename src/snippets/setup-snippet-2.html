@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <style>
+    html, body, #viewDiv {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+
+  <link rel="stylesheet" href="//js.arcgis.com/4.13/esri/css/main.css">
+  <script src="//js.arcgis.com/4.13/"></script>
+
+
+  <title>Create a 3D map</title>
+</head>
+<body>
+  <script>
+
+
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/layers/BuildingSceneLayer",
+      "dojo/domReady!"
+    ], function(WebScene, SceneView, BuildingSceneLayer) {
+      var scene = new WebScene({
+        portalItem: {
+          portal: "http://zrh.mapsdevext.arcgis.com",
+          id: "6aec3ee02ca645278e5002cf5db3f82b"
+        }
+      });
+      
+      var view = new SceneView({
+        container: "viewDiv",
+        map: scene
+      });
+
+      var layer = BuildingSceneLayer({
+        url: "https://tiles.arcgis.com/tiles/OLiydejKCZTGhvWg/arcgis/rest/services/new_building_berlin/SceneServer"
+      });
+      scene.layers.add(layer);
+    });
+  </script>
+  <div id="viewDiv"></div>
+</body>
+</html>

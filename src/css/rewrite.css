@@ -238,7 +238,7 @@ body {
   border: 4px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
-.reveal section img.plain {
+.reveal section img {
   border: 0;
   background: 0;
   box-shadow: none; }
@@ -292,9 +292,11 @@ body {
 
 .reveal code {
   margin: 0px 6px 0px 6px;
-  padding: 0px 6px 0px 6px;
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  font-size: 0.75em;
+  padding: 6px;
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
   line-height: 1;
 }
 

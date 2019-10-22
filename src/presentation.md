@@ -297,14 +297,22 @@ Simple steps to use the API:
 <!-- .slide: data-background="./images/bg-3.png" -->
 ## Demo
 
+<iframe id="scene-view-map-view" data-src="./snippets/setup-snippet-1.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" -->
-## Details about the `Webscene` class
+### Notes about the `SceneView` class
 
-- `Layers`, `Presentation`, ...
-- `Basemap` is exactly the same concept as in 2D
-- `Ground` defines the ground surface of the scene
+- Property `camera` let's you manipulate our viewpoint
+- `map` holds the GIS information
+
+---
+<!-- .slide: data-background="./images/bg-3.png" -->
+### Notes about the `Webscene` class
+
+- Can be initiate using services from `SceneLayerPackages`
+- Property `layers` represents the different level of GIS information
+- `basemap` describes the information draped on the 3D elevation surface of the sphere
 
 ---
 
@@ -312,7 +320,7 @@ Simple steps to use the API:
 
 ## Layers
 
-Is the glue between your data and the visualisation.
+Layers traditionally contains the GIS information and data, usually features of same type and their properties. 
 
 ---
 
@@ -324,20 +332,23 @@ Is the glue between your data and the visualisation.
 |--------------|--|
 | `FeatureLayer` | <small>2D & 3D</small> |
 | `CSVLayer` | <small>2D & 3D</small> |
-| `StreamLayer` | <small>2D & 3D</small> |
 | `MapImageLayer` | <small>2D & 3D</small> |
 | `ImageryLayer` | <small>2D & 3D</small> |
 | `WMSLayer` | <small>2D & 3D</small> |
-| `OpenStreetMapLayer` | <small>2D & 3D</small> |
 | `TileLayer` | <small>2D & 3D</small> |
-| `WebTileLayer` | <small>2D & 3D</small> |
 | `WMTSLayer` | <small>2D & 3D</small> |
 | `VectorTileLayer` | <small>2D & 3D</small> |
 | `ElevationLayer` | <small> 3D only</small> |
 | `SceneLayer` | <small> 3D only</small> |
-| `IntegratedMeshLayer` | <small> 3D only</small> |
-| `PointCloudLayer` | <small> 3D only</small> |
 | `BuildingSceneLayer` | <small> 3D only</small> |
+
+---
+
+<!-- .slide: data-background="../images/bg-8.png" -->
+
+## SceneLayer
+
+`SceneLayer` however is optimized for displaying large amounts of 3D data along side the GIS data. `BuildingSceneLayer` is a variation of it for BIM data.
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" -->
@@ -348,39 +359,83 @@ For example:
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre>
     <code style="margin-bottom: -40px;" class="lang-js">
-        var layer = new FeatureLayer({
+        var layer = new BuildingSceneLayer({
           portalItem: {
             url: "https://..."
           }
         });
         scene.add(layer);
-    </code>
+    </code><div style="clear: both; height: 30px;"></div>
 </pre>
 </div>
 
-When you pass the url to the service. 
+Where you pass the url to the service. 
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" -->
 ## Demo
 
+<iframe id="setup-snippet-2" data-src="./snippets/setup-snippet-2.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
+
 ---
 <!-- .slide: data-background="./images/bg-3.png" -->
 ## BuildingSceneLayer
 
-- 
+- Same properties than `SceneLayer`, with additions:
+- `filters` and the `activeFilterId`
+- `sublayers`
 
 ---
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+## Building's sublayers
+<br>
 
+Two flavours: `BuildingComponentSublayer` and `BuildingGroupSublayer`:
+
+<br>
+
+- `ModelName` is a standard name for each sublayer
+- `visible` if the sublayer is visible in the view 
+- `opacity` of the sublayers individually
+- `sublayers` if `BuildingGroupSublayer`
+
+`BuildingComponentSublayer` has in addition field you can find in a `SceneLayer`, e.g. `renderer`, `definitionExpression`, `popupTemplate`, ...
+
+---
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+## Building's sublayers
+
+<div class="twos">
+  <div>
+    <br>    <br>
+    <h4>First level of sublayers:<h4>
+    <img src="./images/shellvsfull.png" alt="">
+  </div>
+  <div class="snippet-preview">
+    <iframe id="code-snippet-3" data-src="./snippets/setup-snippet-3.html" scrolling="no" style="overflow: hidden;padding: 0; min-width: 400px;" frameborder="0"></iframe>
+  </div>
+</div>
+
+---
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+## Disciplines
+
+<h4>Second level of sublayers<h4>
+
+<img src="./images/sublayers.png" style="margin-left: -150px; width: 700px;" alt="">
+
+---
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+## Disciplines
+
+<h4>Second level of sublayers<h4>
+
+<iframe id="code-snippet-3" data-src="./snippets/setup-snippet-3.html" scrolling="no" style="overflow: hidden;padding: 0; width: 700px; min-height: 261px;height: 261px;" frameborder="0"></iframe>
+
+---
 <!-- .slide: data-background="./images/bg-3.png" -->
+## Filtering
 
-# Quick intro to the ArcGIS Javascript API
-
-Simple steps to use the API:
-
-1. Create a HTML page and reference the API
-1. Create a scene
-1. Import the service
 
 ---
 

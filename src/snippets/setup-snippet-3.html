@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <style>
+    html, body, #viewDiv {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .esri-view-height-xsmall .esri-expand .esri-widget--panel, .esri-view-height-xsmall .esri-expand .esri-widget--panel-height-only, .esri-view-height-xsmall .esri-ui-corner .esri-component.esri-widget--panel, .esri-view-height-xsmall .esri-ui-corner .esri-component.esri-widget--panel-height-only {
+      max-height: 430px!important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="//js.arcgis.com/4.13/esri/css/main.css">
+  <script src="//js.arcgis.com/4.13/"></script>
+
+
+  <title>Create a 3D map</title>
+</head>
+<body>
+  <script>
+
+
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/widgets/LayerList",
+      "dojo/domReady!"
+    ], function(WebScene, SceneView, LayerList) {
+      var scene = new WebScene({
+        portalItem: {
+          portal: "http://zrh.mapsdevext.arcgis.com",
+          id: "bfa9bbd5a63e4cad96d276d5d57765ac"
+        }
+      });
+      
+      var view = new SceneView({
+        container: "viewDiv",
+        map: scene
+      });
+
+      var layerList = new LayerList({
+        view: view
+      });
+      view.ui.add(layerList, "top-right");
+    });
+  </script>
+  <div id="viewDiv"></div>
+</body>
+</html>
