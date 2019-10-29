@@ -650,6 +650,19 @@ buildingLayer.activeFilterId = buildingFilter.id;
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
 <iframe id="setup-snippet-2" data-src="./snippets/filters.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
+
+---
+<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+
+### Interesting attribute to filter
+
+- `BldgLevel`
+- `Category`
+- `Discipline`
+- `CreatedPhase` / `DemolishedPhase`
+- `ElementType`
+- `RoomType`
+
 ---
 <!-- .slide: data-background="./images/bg-1.png" -->
 
