@@ -146,58 +146,41 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="./images/bg-3.png" -->
+<!-- .slide: data-background="../images/bg-2.png" -->
 
-# A slide template
+### <b>Consuming a service</b>
 
-
-    ---
-
-    <!-- .slide: data-background="./images/bg-3.png" -->
-
-    # A slide template
-
-    Your text
-
+<img class="fragment current-fragment visible plain exclusive" src="./images/recap-1.png" background=none>
+<img class="fragment plain exclusive" src="./images/recap-2.png" background=none>
+<img class="fragment plain exclusive" src="./images/recap-3.png" background=none>
+<img class="fragment plain exclusive" src="./images/recap-4.png" background=none>
+<img class="fragment plain exclusive" src="./images/recap-5.png" background=none>
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" -->
+<!-- .slide: data-background="./images/bg-3.png" data-transition="convex-in zoom-out" -->
 
-## Consuming a service
-
-You can consume it in severals way. We will focus how to consume it into a browser using the ArcGIS Javascript API
-
-
----
-
-<!-- .slide: data-background="./images/bg-3.png" -->
-
-## Quick intro to the ArcGIS Javascript API
+## ArcGIS Javascript API
 
    
 - Visual mapping (2D & 3D), components and widgets
 - Support for various different layer types (data sources)
 - Integration with the ArcGIS platform (security, sign-in, premium services, …)
 
-Find doc & samples to get started at [https://developers.arcgis.com/javascript](https://developers.arcgis.com/javascript)
+<div style="font-size: 75%" class="twos">
 
+> Find doc & samples to get started at [https://developers.arcgis.com/javascript](https://developers.arcgis.com/javascript)
 
----
+<blockquote>
+<h4 style="padding: 0 40px;">ArcGIS API for JavaScript Programming Patterns and API Fundamentals with version 4.x</h4>
+<div style="text-align: center;">2:00 p.m. — 2:45 p.m | Ballroom ABC</div>
 
-<!-- .slide: data-background="./images/bg-3.png" -->
+</blockquote>
 
-## Quick intro to the ArcGIS Javascript API
-
-Simple steps to use the API:
-
-1. Create a HTML page and reference the API
-1. Create a scene
-1. Import the service
+</div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none"  -->
-## Creating basic HTML file
+<!-- .slide: data-background="./images/bg-3.png" data-transition="fade-in none-out"  -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="lang-html">
@@ -210,23 +193,35 @@ Simple steps to use the API:
       &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.13/esri/css/main.css&quot;&gt;
       &lt;script src=&quot;//js.arcgis.com/4.13/&quot;&gt;&lt;/script&gt;
     </code>
-    <code style="margin-bottom: -30px;" class="lang-html">
+    <code style="margin-bottom: -30px;" class="grey">
       &lt;title&gt;Create a 3D map&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
+    </code>
+    <code style="margin-bottom: -30px;" class="grey">
+        require([
+          "esri/WebScene",
+          "esri/views/SceneView",
+          "dojo/domReady!"
+        ], function(WebScene, SceneView) {
+          var scene = new WebScene();
+          var view = new SceneView({
+            container: "viewDiv",
+            map: scene
+          });
+        });
+    </code>
+    <code class="lang-html">
       &lt;/script&gt;
       &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-    </code>
-    <div style="clear: both; height: 30px;"></div>
-  </pre>
+    </code><div style="clear: both; height: 30px;"></div></pre>
 </div>
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" data-transition="none"  -->
-## Reference the ArcGIS API for JavaScript
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -244,6 +239,21 @@ Simple steps to use the API:
     &lt;/head&gt;
     &lt;body&gt;
       &lt;script&gt;
+    </code>
+    <code style="margin-bottom: -30px;" class="grey">
+        require([
+          "esri/WebScene",
+          "esri/views/SceneView",
+          "dojo/domReady!"
+        ], function(WebScene, SceneView) {
+          var scene = new WebScene();
+          var view = new SceneView({
+            container: "viewDiv",
+            map: scene
+          });
+        });
+    </code>
+    <code class="grey">
       &lt;/script&gt;
       &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
     &lt;/body&gt;
@@ -253,7 +263,6 @@ Simple steps to use the API:
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
-## Instantiate the webscene
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -294,37 +303,45 @@ Simple steps to use the API:
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
-## Demo
+<!-- .slide: data-background="./images/bg-3.png" data-transition="none-in fade-out" -->
 
-<iframe id="scene-view-map-view" data-src="./snippets/setup-snippet-1.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
+<iframe id="scene-view-map-view" data-src="./snippets/setup-snippet-1.html" scrolling="no" style="overflow: hidden;padding: 0; width: 685px;height:592px;"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
+
+<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
+
+## Architecture
+<br/>
+<img src="../images/concepts-architecture2.png" width="60%" style="border: none; background: none; box-shadow: none"/>
+
+<!---
+
 ### Notes about the `SceneView` class
 
 - Property `camera` let's you manipulate our viewpoint
 - `map` holds the GIS information
 
----
-<!-- .slide: data-background="./images/bg-3.png" -->
 ### Notes about the `Webscene` class
 
 - Can be initiate using services from `SceneLayerPackages`
 - Property `layers` represents the different level of GIS information
 - `basemap` describes the information draped on the 3D elevation surface of the sphere
 
+-->
+
 ---
 
-<!-- .slide: data-background="../images/bg-8.png" -->
+<!-- .slide: data-background="../images/bg-3.png" data-transition="fade" -->
 
 ## Layers
 
-Layers traditionally contains the GIS information and data, usually features of same type and their properties. 
+- GIS information (features of same type)
+- Related properties (shape, etc...) 
 
 ---
 
-<!-- .slide: data-background="../images/bg-8.png" -->
+<!-- .slide: data-background="../images/bg-3.png" data-transition="fade" -->
 
 ## Layers
 
@@ -344,24 +361,22 @@ Layers traditionally contains the GIS information and data, usually features of 
 
 ---
 
-<!-- .slide: data-background="../images/bg-8.png" -->
+<!-- .slide: data-background="../images/bg-3.png" data-transition="fade" -->
 
-## SceneLayer
+## [`SceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html)
 
-`SceneLayer` however is optimized for displaying large amounts of 3D data along side the GIS data. `BuildingSceneLayer` is a variation of it for BIM data.
+- Optimized for large data
+- [`BuildingSceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) is a variation of it for BIM data.
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
-## Layers
+<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
 
-For example:
-
-<div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
+<div class="code-snippet" style="max-width: 600px; font-size: 200%; float: none; margin: auto;">
     <pre>
     <code style="margin-bottom: -40px;" class="lang-js">
         var layer = new BuildingSceneLayer({
           portalItem: {
-            url: "https://..."
+            url: "https://..." // Url of service
           }
         });
         scene.add(layer);
@@ -369,17 +384,15 @@ For example:
 </pre>
 </div>
 
-Where you pass the url to the service. 
-
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
-## Demo
+<!-- .slide: data-background="./images/bg-3.png"  data-transition="fade"-->
 
 <iframe id="setup-snippet-2" data-src="./snippets/setup-snippet-2.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
-## BuildingSceneLayer
+<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
+
+## `BuildingSceneLayer` 
 
 - Same properties than `SceneLayer`, with additions:
 - `filters` and the `activeFilterId`
@@ -387,10 +400,9 @@ Where you pass the url to the service.
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
-## Building's sublayers
-<br>
+### Building's sublayers
 
-Two flavours: `BuildingComponentSublayer` and `BuildingGroupSublayer`:
+`BuildingComponentSublayer` or `BuildingGroupSublayer`
 
 <br>
 
@@ -399,7 +411,11 @@ Two flavours: `BuildingComponentSublayer` and `BuildingGroupSublayer`:
 - `opacity` of the sublayers individually
 - `sublayers` if `BuildingGroupSublayer`
 
-`BuildingComponentSublayer` has in addition field you can find in a `SceneLayer`, e.g. `renderer`, `definitionExpression`, `popupTemplate`, ...
+<blockquote style="padding: 30px;"><small style="line-height: 1.9em;">
+Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: <code style="vertical-align: middle;">renderer</code>, <code style="vertical-align: middle;">definitionExpression</code>, <code style="vertical-align: middle;">popupTemplate</code>, ...
+</small>
+</blockquote>
+
 
 ---
 <!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
@@ -435,6 +451,17 @@ Two flavours: `BuildingComponentSublayer` and `BuildingGroupSublayer`:
 ---
 <!-- .slide: data-background="./images/bg-3.png" -->
 ## Filtering
+
+
+---
+<!-- .slide: data-background="./images/bg-1.png" -->
+
+## Demo
+<small style="margin: auto; margin-top: -30px; text-align: center;">
+  of BIM Apps
+</small>
+
+<a href="https://esri.github.io/building-viewer"><img src="./images/building-viewer.png" alt="https://github.com/Esri/building-viewer/"></a>
 
 
 ---

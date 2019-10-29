@@ -763,3 +763,11 @@ span.hljs-string {
     margin-right: 32%;
     margin-bottom: 70%;
 }
+
+.exclusive.visible {
+  display: none;
+}
+
+.exclusive.visible.current-fragment {
+  display: block;
+}
