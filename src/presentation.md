@@ -667,6 +667,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 <!-- .slide: data-background="./images/bg-1.png" -->
 
 ## Demo
+
 <small style="margin: auto; margin-top: -30px; text-align: center;">
   of BIM Apps
 </small>
