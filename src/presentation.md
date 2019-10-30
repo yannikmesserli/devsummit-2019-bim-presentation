@@ -158,7 +158,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="./images/bg-3.png" data-transition="convex-in zoom-out" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="convex-in zoom-out" -->
 
 ## ArcGIS Javascript API
 
@@ -173,14 +173,14 @@ Limitations
 
 <blockquote>
 <h4 style="padding: 0 40px;">ArcGIS API for JavaScript Programming Patterns and API Fundamentals with version 4.x</h4>
-<div style="text-align: center;">2:00 p.m. — 2:45 p.m | Ballroom ABC</div>
+<div style="text-align: center;">Mon, 2:00 p.m. — 2:45 p.m | Ballroom ABC</div>
 
 </blockquote>
 
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="fade-in none-out"  -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade-in none-out"  -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="lang-html">
@@ -221,7 +221,7 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none"  -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none"  -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -262,7 +262,7 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="grey">
@@ -303,13 +303,13 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none-in fade-out" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none-in fade-out" -->
 
 <iframe id="scene-view-map-view" data-src="./snippets/setup-snippet-1.html" scrolling="no" style="overflow: hidden;padding: 0; width: 685px;height:592px;"></iframe>
 
 ---
 
-<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ## Architecture
 <br/>
@@ -332,7 +332,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="../images/bg-2.png" data-transition="fade" -->
 
 ## Layers
 
@@ -341,7 +341,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="../images/bg-2.png" data-transition="fade" -->
 
 ## Layers
 
@@ -361,7 +361,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="../images/bg-2.png" data-transition="fade" -->
 
 ## [`SceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html)
 
@@ -369,7 +369,7 @@ Limitations
 - [`BuildingSceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) is a variation of it for BIM data.
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 200%; float: none; margin: auto;">
     <pre>
@@ -385,12 +385,12 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png"  data-transition="fade"-->
+<!-- .slide: data-background="./images/bg-2.png"  data-transition="fade"-->
 
 <iframe id="setup-snippet-2" data-src="./snippets/setup-snippet-2.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ## `BuildingSceneLayer` 
 
@@ -399,7 +399,7 @@ Limitations
 - `sublayers`
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 ### Building's sublayers
 
 `BuildingComponentSublayer` or `BuildingGroupSublayer`
@@ -418,7 +418,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 ## Building's sublayers
 
 <div class="twos">
@@ -433,7 +433,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 ## Disciplines
 
 <h4>Second level of sublayers<h4>
@@ -441,7 +441,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 <img src="./images/sublayers.png" style="margin-left: -150px; width: 700px;" alt="">
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 ## Disciplines
 
 <h4>Second level of sublayers<h4>
@@ -449,13 +449,13 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 <iframe id="code-snippet-3" data-src="./snippets/setup-snippet-3.html" scrolling="no" style="overflow: hidden;padding: 0; width: 700px; min-height: 261px;height: 261px;" frameborder="0"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" -->
+<!-- .slide: data-background="./images/bg-4.png" -->
 ## Filtering
 
 <!-- A BuildingSceneLayer contains complex digital models of buildings and interiors. Because of the high complexity, it's important to be able to filter the data. -->
 
 ---
-<!-- .slide: data-background="./images/bg-3.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 -  Multiple `BuildingFilter` can be added to `BuildingSceneLayer.filters[]`
 -  Only one active through `BuildingSceneLayer.activeFilterId`
@@ -463,7 +463,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 <!-- Several filters can be set in the filters collection of a BuildingSceneLayer, but only one can be active. Each filter has an id and you can activate a filter by setting its id in BuildingSceneLayer.activeFilterId. This filter is then set on all the sublayers of the BuildingSceneLayer. -->
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -489,7 +489,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -515,7 +515,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -541,7 +541,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -567,7 +567,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -593,7 +593,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -619,7 +619,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -645,14 +645,14 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
 <iframe id="setup-snippet-2" data-src="./snippets/filters.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-4.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ### Interesting attribute to filter
 
@@ -673,6 +673,12 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </small>
 
 <a href="https://esri.github.io/building-viewer"><img src="./images/building-viewer.png" alt="https://github.com/Esri/building-viewer/"></a>
+
+
+---
+<!-- .slide: data-background="./images/bg-2.png" -->
+
+## Summary
 
 
 ---
