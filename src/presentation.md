@@ -686,3 +686,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 ### Please Take Our Survey on the App
 
 <img class="plain" src="./images/survey.png" background=none>
+
+---
+
+<!-- .slide: data-background="images/bg-final.png" -->
