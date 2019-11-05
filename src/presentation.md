@@ -148,7 +148,7 @@ Limitations
 
 <!-- .slide: data-background="../images/bg-2.png" -->
 
-### <b>Consuming a service</b>
+### <b>Consuming a Service</b>
 
 <img class="fragment current-fragment visible plain exclusive" src="./images/recap-1.png" background=none>
 <img class="fragment plain exclusive" src="./images/recap-2.png" background=none>
@@ -398,9 +398,14 @@ Limitations
 - `filters` and the `activeFilterId`
 - `sublayers`
 
+<blockquote style="padding: 30px;"><small style="line-height: 1.9em;">
+Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: <code style="vertical-align: middle;">renderer</code>, <code style="vertical-align: middle;">definitionExpression</code>, <code style="vertical-align: middle;">popupTemplate</code>, ...
+</small>
+</blockquote>
+
 ---
 <!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
-### Building's sublayers
+### Building Sublayers
 
 `BuildingComponentSublayer` or `BuildingGroupSublayer`
 
@@ -411,15 +416,10 @@ Limitations
 - `opacity` of the sublayers individually
 - `sublayers` if `BuildingGroupSublayer`
 
-<blockquote style="padding: 30px;"><small style="line-height: 1.9em;">
-Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: <code style="vertical-align: middle;">renderer</code>, <code style="vertical-align: middle;">definitionExpression</code>, <code style="vertical-align: middle;">popupTemplate</code>, ...
-</small>
-</blockquote>
-
 
 ---
 <!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
-## Building's sublayers
+## Building Sublayers
 
 <div class="twos">
   <div>
@@ -438,7 +438,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 
 <h4>Second level of sublayers<h4>
 
-<img src="./images/sublayers.png" style="margin-left: -150px; width: 700px;" alt="">
+<img src="./images/sublayers.png" style="margin-left: -200px; width: 850px;" alt="">
 
 ---
 <!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
@@ -446,7 +446,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 
 <h4>Second level of sublayers<h4>
 
-<iframe id="code-snippet-3" data-src="./snippets/setup-snippet-3.html" scrolling="no" style="overflow: hidden;padding: 0; width: 700px; min-height: 261px;height: 261px;" frameborder="0"></iframe>
+<iframe id="code-snippet-3" data-src="./snippets/setup-snippet-3.html" scrolling="no" style="overflow: hidden;padding: 0; width: 700px; min-height: 261px;height: 400px;" frameborder="0"></iframe>
 
 ---
 <!-- .slide: data-background="./images/bg-4.png" -->
@@ -578,6 +578,34 @@ buildingLayer.activeFilterId = buildingFilter.id;
 <code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
     filterExpression: "BldgLevel = 3",
 </code>
+<code style="padding: 0px 50px;" class="lang-js">    filterMode: {
+      type: "solid" // "wire-frame" !!
+    }
+</code>
+<code style="padding: 0px 50px;" class="grey">  }]
+});
+</code>
+<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
+buildingLayer.filters = [buildingFilter];
+</code>
+<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
+buildingLayer.activeFilterId = buildingFilter.id;
+</code></pre></div>
+
+<img src="./images/wireframe.png" style="position: absolute; margin-left: 100px; padding: 30px; background: rgba(0,0,0,0.5);" alt="">
+
+---
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+
+### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
+
+<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
+</code>
+<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
+</code>
+<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
+    filterExpression: "BldgLevel = 3",
+</code>
 <code style="padding: 0px 50px;" class="grey">    filterMode: {
       type: "solid" // "wire-frame" !!
     }
@@ -654,32 +682,47 @@ buildingLayer.activeFilterId = buildingFilter.id;
 ---
 <!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
-### Interesting attribute to filter
+### Attribute to Filter
 
+- `Discipline` (Architectural, Plumbing, ...)
+- `Category` (Furniture, Door, Panel, ...)
+- `Family` ("basic wall", "panels", ...)
+- `FamilyType` (e.g. "Glass 4")
 - `BldgLevel`
-- `Category`
-- `Discipline`
 - `CreatedPhase` / `DemolishedPhase`
-- `ElementType`
 - `RoomType`
+
+<blockquote>
+<small>
+  More at <a href="https://pro.arcgis.com/en/pro-app/help/mapping/layer-properties/filter-a-building-scene-layer.htm">pro.arcgis.com/en/pro-app/help/mapping/layer-properties/filter-a-building-scene-layer.htm</a>
+</small>
+</blockquote>
 
 ---
 <!-- .slide: data-background="./images/bg-1.png" -->
 
 ## Demo
 
-<small style="margin: auto; margin-top: -30px; text-align: center;">
-  of BIM Apps
+<small style="margin: auto; margin-top: -30px; margin-bottom: -30px; text-align: center;">
+  <a href="https://github.com/Esri/building-viewer/">https://github.com/Esri/building-viewer</a>
 </small>
 
-<a href="https://esri.github.io/building-viewer"><img src="./images/building-viewer.png" alt="https://github.com/Esri/building-viewer/"></a>
-
+<a href="https://esri.github.io/building-viewer"><img src="./images/building-viewer.png" alt="https://github.com/Esri/building-viewer/" style="margin-top: -30px;"></a>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" -->
 
-## Summary
+<!-- .slide: data-background="./images/bg-1.png" -->
 
+
+<div style="text-align: left;">
+  <h2>Thank you!</h2>
+  <br>
+<h4>&Ouml;zg&uuml;r Ertac</h4>
+<div style="margin-top: -30px; margin-bottom: 20px;font-size: 0.7em;">@Oertac_gis</div>
+<h4>Yannik Messerli</h4>
+<div style="margin-top: -30px; margin-bottom: 20px;font-size: 0.7em;">
+linkedin.com/in/yannikmesserli</div>
+</div>
 
 ---
 
