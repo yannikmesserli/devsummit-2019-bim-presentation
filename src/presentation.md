@@ -260,6 +260,7 @@ Limitations
 | `SceneLayer` | <small> 3D only</small> |
 | `BuildingSceneLayer` | <small> 3D only</small> |
 
+
 ---
 
 <!-- .slide: data-background="./images/bg-2.png" -->
@@ -270,6 +271,7 @@ Limitations
 - [`BuildingSceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) is a variation of it for BIM data.
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 200%; float: none; margin: auto;">
@@ -286,11 +288,13 @@ Limitations
 </div>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 <iframe id="setup-snippet-2" data-src="./snippets/setup-snippet-2.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 ## `BuildingSceneLayer` 
@@ -305,7 +309,9 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 </blockquote>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
+
 ### Building Sublayers
 
 `BuildingComponentSublayer` or `BuildingGroupSublayer`
@@ -319,7 +325,9 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
+
 ## Building Sublayers
 
 <div class="twos">
@@ -334,15 +342,18 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 </div>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
+
 ## Disciplines
 
 <h4>Second level of sublayers<h4>
-
-<img src="./images/sublayers.png" style="margin-left: -200px; width: 850px;" alt="">
+<img src="./images/sublayers.png" style="margin-left: -200px; width: 850px;" alt="" />
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
+
 ## Disciplines
 
 <h4>Second level of sublayers<h4>
@@ -350,16 +361,19 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 <iframe id="code-snippet-3" data-src="./snippets/setup-snippet-3.html" scrolling="no" style="overflow: hidden;padding: 0; width: 700px; min-height: 261px;height: 400px;" frameborder="0"></iframe>
 
 ---
+
 <!-- .slide: data-background="./images/bg-4.png" -->
 ## Filtering
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 -  Multiple `BuildingFilter` can be added to `BuildingSceneLayer.filters[]`
 -  Only one active through `BuildingSceneLayer.activeFilterId`
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
