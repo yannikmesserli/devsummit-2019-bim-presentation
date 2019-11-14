@@ -483,6 +483,8 @@ linkedin.com/in/yannikmesserli</div>
 
 ---
 
+<!-- .slide: data-background="./images/bg-2.png" -->
+
 ### Please Take Our Survey on the App
 
 <img class="plain" src="./images/survey.png" background=none>
