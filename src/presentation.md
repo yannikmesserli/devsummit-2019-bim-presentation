@@ -146,7 +146,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-2.png" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ### <b>Consuming a Service</b>
 
@@ -176,6 +176,7 @@ Limitations
 </div>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
@@ -246,7 +247,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ## Layers
 
@@ -255,7 +256,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ## Layers
 
@@ -275,7 +276,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="../images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 ## [`SceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html)
 
