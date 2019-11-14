@@ -432,6 +432,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
@@ -439,6 +440,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 <iframe id="setup-snippet-2" data-src="./snippets/filters.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
+
 <!-- .slide: data-background="./images/bg-2.png" -->
 
 ### Attribute to Filter
@@ -458,6 +460,7 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </blockquote>
 
 ---
+
 <!-- .slide: data-background="./images/bg-1.png" -->
 
 ## Demo
