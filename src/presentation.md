@@ -410,24 +410,19 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="lang-js">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="lang-js">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="lang-js">    // an SQL expression that filters using the BldgLevel field
+<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="lang-js">
+const buildingFilter = new BuildingFilter({
+  filterBlocks: [{
+    // an SQL expression that filters using the BldgLevel field
     filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="lang-js">    filterMode: {
+    filterMode: {
       type: "solid" // "wire-frame" !!
     }
-</code>
-<code style="padding: 0px 50px;" class="lang-js">  }]
+  }]
 });
-</code>
-<code style="padding: 0px 50px;" class="lang-js">// set the filter in the filters array on the layer
+// set the filter in the filters array on the layer
 buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="lang-js">// specify which filter is the one that should be applied
+// specify which filter is the one that should be applied
 buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
