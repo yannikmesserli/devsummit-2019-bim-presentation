@@ -8,4 +8,4 @@ _1:00 p.m. — 1:45 p.m. // Salon Durieux_
 
 BIM data is one of the most widely used in AEC industry. In this talk we'll cover how GIS enabled BIM data can be leveraged within ArcGIS platform including ArcGIS Pro, Scene Viewer and the ArcGIS API for JavaScript. Participants will be guided through the process of obtaining the data to share and visualize across the platform.
 
-https://yannikmesserli.github.io/devsummit-2019-bim-presentation/src/
+https://yannikmesserli.github.io/devsummit-2019-bim-presentation/src/index.html

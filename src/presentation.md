@@ -32,7 +32,7 @@ By &Ouml;zg&uuml;r Ertac &amp; Yannik Messerli
 
 ### Building Information Modeling
 
-<section style="text-align: justify;">
+<div style="text-align: justify;">
 A 3D model-based process that provides professionals info and tools to efficiently plan, design, construct and manage buildings and structures.
 
 A BIM object is a combination of:
@@ -40,7 +40,7 @@ A BIM object is a combination of:
 - Geometry for physical chracteristics
 - Relations and attributes (Meta Data)
 - Intelligent 2D- & 3D-Objects
-</section>
+</div>
 
 ---
 
@@ -48,14 +48,14 @@ A BIM object is a combination of:
 
 ## Revit Data
 
-<section style="text-align: left;">
+<div style="text-align: left;">
 Revit is not BIM, Revit is built for BIM
 
 - design with parametric modeling and drafting elements
 - mutliple views of same geometry
 - a change anywhere is a change everywhere
 
-</section>
+</div>
 
 ---
 
@@ -63,14 +63,14 @@ Revit is not BIM, Revit is built for BIM
 
 ## Revit Data
 
-<section style="text-align: left;">
+<div style="text-align: left;">
 
 Other BIM standards / software
 - IFC
 - Bentley Arch
 - Allplan
 - BricsCAD and [many more](https://financesonline.com/building-information-modeling/)
-</section>
+</div>
 
 ---
 
@@ -78,7 +78,7 @@ Other BIM standards / software
 
 ## Georeference a Revit Data
 
-<section style="text-align: left;">
+<div style="text-align: left;">
 ArcGIS Pro can display Revit in correct location!
 Requirements:
 
@@ -86,7 +86,7 @@ Requirements:
 - World file (name.wld3)
 - Revit control points (Project Base Point, Survey Point)
 
-</section>
+</div>
 
 ---
 
@@ -119,7 +119,7 @@ Requirements:
 
 ### Sharing Revit as a Service
 
-<section style="text-align: left;">
+<div style="text-align: left;">
 Introducing a new I3S layer for buildings
 
 - Building Scene Layer (Pro 2.3, Enterprise 10.7) 
@@ -127,7 +127,7 @@ Introducing a new I3S layer for buildings
 - Load Revit in ArcGIS Pro -> Share as SLPK -> Upload to Portal
 - Visual filtering, saved filters & levels, categories
 
-</section>
+</div>
 
 ---
 
@@ -135,14 +135,14 @@ Introducing a new I3S layer for buildings
 
 ### Sharing Revit as a Service
 
-<section style="text-align: left;">
+<div style="text-align: left;">
 Limitations
 
 - one revit file -> one building scene layer
 - not updatable from source directly
 - no materials / textures
 
-</section>
+</div>
 
 ---
 
