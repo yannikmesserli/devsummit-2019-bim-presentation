@@ -154,7 +154,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" data-transition="convex-in zoom-out" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ## ArcGIS Javascript API
 
@@ -177,7 +177,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="lang-html">
@@ -218,36 +218,22 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none-in fade-out" -->
+
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 <iframe id="scene-view-map-view" data-src="./snippets/setup-snippet-1.html" scrolling="no" style="overflow: hidden;padding: 0; width: 685px;height:592px;"></iframe>
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ## Architecture
 <br/>
-<img src="../images/concepts-architecture2.png" width="60%" style="border: none; background: none; box-shadow: none"/>
-
-<!---
-
-### Notes about the `SceneView` class
-
-- Property `camera` let's you manipulate our viewpoint
-- `map` holds the GIS information
-
-### Notes about the `Webscene` class
-
-- Can be initiate using services from `SceneLayerPackages`
-- Property `layers` represents the different level of GIS information
-- `basemap` describes the information draped on the 3D elevation surface of the sphere
-
--->
+<img src="./images/concepts-architecture2.png" width="60%" style="border: none; background: none; box-shadow: none"/>
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ## Layers
 
@@ -256,7 +242,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ## Layers
 
@@ -276,7 +262,7 @@ Limitations
 
 ---
 
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ## [`SceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html)
 
@@ -284,7 +270,7 @@ Limitations
 - [`BuildingSceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) is a variation of it for BIM data.
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 200%; float: none; margin: auto;">
     <pre>
@@ -300,12 +286,12 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png"  data-transition="fade"-->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 <iframe id="setup-snippet-2" data-src="./snippets/setup-snippet-2.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ## `BuildingSceneLayer` 
 
@@ -319,7 +305,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 </blockquote>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 ### Building Sublayers
 
 `BuildingComponentSublayer` or `BuildingGroupSublayer`
@@ -333,7 +319,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 ## Building Sublayers
 
 <div class="twos">
@@ -348,7 +334,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 ## Disciplines
 
 <h4>Second level of sublayers<h4>
@@ -356,7 +342,7 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 <img src="./images/sublayers.png" style="margin-left: -200px; width: 850px;" alt="">
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 ## Disciplines
 
 <h4>Second level of sublayers<h4>
@@ -368,13 +354,13 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 ## Filtering
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 -  Multiple `BuildingFilter` can be added to `BuildingSceneLayer.filters[]`
 -  Only one active through `BuildingSceneLayer.activeFilterId`
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
@@ -400,14 +386,14 @@ buildingLayer.activeFilterId = buildingFilter.id;
 </code></pre></div>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
 
 <iframe id="setup-snippet-2" data-src="./snippets/filters.html" scrolling="no" style="overflow: hidden;padding: 0;"></iframe>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
+<!-- .slide: data-background="./images/bg-2.png" -->
 
 ### Attribute to Filter
 
