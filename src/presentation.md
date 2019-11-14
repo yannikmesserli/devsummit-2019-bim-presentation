@@ -308,15 +308,15 @@ Limitations
 
 <div class="code-snippet" style="max-width: 600px; font-size: 200%; float: none; margin: auto;">
     <pre>
-    <code style="margin-bottom: -40px;" class="lang-js">
-        var layer = new BuildingSceneLayer({
-          portalItem: {
-            url: "https://..." // Url of service
-          }
-        });
-        scene.add(layer);
-    </code><div style="clear: both; height: 30px;"></div>
-</pre>
+      <code style="margin-bottom: -40px;" class="lang-js">
+          var layer = new BuildingSceneLayer({
+            portalItem: {
+              url: "https://..." // Url of service
+            }
+          });
+          scene.add(layer);
+      </code><div style="clear: both; height: 30px;"></div>
+    </pre>
 </div>
 
 ---
