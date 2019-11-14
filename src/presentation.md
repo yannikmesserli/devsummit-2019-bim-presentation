@@ -246,20 +246,52 @@ Limitations
 
 ## Layers
 
-|              |  |
-|--------------|--|
-| `FeatureLayer` | <small>2D & 3D</small> |
-| `CSVLayer` | <small>2D & 3D</small> |
-| `MapImageLayer` | <small>2D & 3D</small> |
-| `ImageryLayer` | <small>2D & 3D</small> |
-| `WMSLayer` | <small>2D & 3D</small> |
-| `TileLayer` | <small>2D & 3D</small> |
-| `WMTSLayer` | <small>2D & 3D</small> |
-| `VectorTileLayer` | <small>2D & 3D</small> |
-| `ElevationLayer` | <small> 3D only</small> |
-| `SceneLayer` | <small> 3D only</small> |
-| `BuildingSceneLayer` | <small> 3D only</small> |
-
+<table>
+<tbody><tr>
+<td><code>FeatureLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>CSVLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>MapImageLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>ImageryLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>WMSLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>TileLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>WMTSLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>VectorTileLayer</code></td>
+<td><small>2D &amp; 3D</small></td>
+</tr>
+<tr>
+<td><code>ElevationLayer</code></td>
+<td><small> 3D only</small></td>
+</tr>
+<tr>
+<td><code>SceneLayer</code></td>
+<td><small> 3D only</small></td>
+</tr>
+<tr>
+<td><code>BuildingSceneLayer</code></td>
+<td><small> 3D only</small></td>
+</tr>
+</tbody></table>
 
 ---
 
