@@ -150,11 +150,7 @@ Limitations
 
 ### <b>Consuming a Service</b>
 
-<img class="fragment current-fragment visible plain exclusive" src="./images/recap-1.png" background=none>
-<img class="fragment plain exclusive" src="./images/recap-2.png" background=none>
-<img class="fragment plain exclusive" src="./images/recap-3.png" background=none>
-<img class="fragment plain exclusive" src="./images/recap-4.png" background=none>
-<img class="fragment plain exclusive" src="./images/recap-5.png" background=none>
+<img class="plain" src="./images/recap-5.png" background=none>
 
 ---
 
@@ -180,51 +176,10 @@ Limitations
 </div>
 
 ---
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade-in none-out"  -->
+<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
 
 <div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
     <pre><code style="margin-bottom: -30px;" class="lang-html">
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-      &lt;meta charset=&quot;utf-8&quot;&gt;
-    </code>
-    <code style="margin-bottom: -30px;" class="grey">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.13/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.13/&quot;&gt;&lt;/script&gt;
-    </code>
-    <code style="margin-bottom: -30px;" class="grey">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;script&gt;
-    </code>
-    <code style="margin-bottom: -30px;" class="grey">
-        require([
-          "esri/WebScene",
-          "esri/views/SceneView",
-          "dojo/domReady!"
-        ], function(WebScene, SceneView) {
-          var scene = new WebScene();
-          var view = new SceneView({
-            container: "viewDiv",
-            map: scene
-          });
-        });
-    </code>
-    <code class="lang-html">
-      &lt;/script&gt;
-      &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-    </code><div style="clear: both; height: 30px;"></div></pre>
-</div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none"  -->
-
-<div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
-    <pre><code style="margin-bottom: -30px;" class="grey">
     &lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -234,48 +189,7 @@ Limitations
       &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.13/esri/css/main.css&quot;&gt;
       &lt;script src=&quot;//js.arcgis.com/4.13/&quot;&gt;&lt;/script&gt;
     </code>
-    <code style="margin-bottom: -30px;" class="grey">
-      &lt;title&gt;Create a 3D map&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;script&gt;
-    </code>
-    <code style="margin-bottom: -30px;" class="grey">
-        require([
-          "esri/WebScene",
-          "esri/views/SceneView",
-          "dojo/domReady!"
-        ], function(WebScene, SceneView) {
-          var scene = new WebScene();
-          var view = new SceneView({
-            container: "viewDiv",
-            map: scene
-          });
-        });
-    </code>
-    <code class="grey">
-      &lt;/script&gt;
-      &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-    </code><div style="clear: both; height: 30px;"></div></pre>
-</div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="none" -->
-
-<div class="code-snippet" style="max-width: 600px; font-size: 130%; float: none; margin: auto;">
-    <pre><code style="margin-bottom: -30px;" class="grey">
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-      &lt;meta charset=&quot;utf-8&quot;&gt;
-    </code>
-    <code style="margin-bottom: -30px;" class="grey">
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;//js.arcgis.com/4.13/esri/css/main.css&quot;&gt;
-      &lt;script src=&quot;//js.arcgis.com/4.13/&quot;&gt;&lt;/script&gt;
-    </code>
-    <code style="margin-bottom: -30px;" class="grey">
+    <code style="margin-bottom: -30px;" class="lang-js">
       &lt;title&gt;Create a 3D map&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
@@ -294,7 +208,7 @@ Limitations
           });
         });
     </code>
-    <code class="grey">
+    <code class="lang-html">
       &lt;/script&gt;
       &lt;div id=&quot;viewDiv&quot;&gt;&lt;/div&gt;
     &lt;/body&gt;
@@ -452,199 +366,11 @@ Additional fields from <code style="vertical-align: middle;">SceneLayer</code>: 
 <!-- .slide: data-background="./images/bg-4.png" -->
 ## Filtering
 
-<!-- A BuildingSceneLayer contains complex digital models of buildings and interiors. Because of the high complexity, it's important to be able to filter the data. -->
-
 ---
 <!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
 
 -  Multiple `BuildingFilter` can be added to `BuildingSceneLayer.filters[]`
 -  Only one active through `BuildingSceneLayer.activeFilterId`
-
-<!-- Several filters can be set in the filters collection of a BuildingSceneLayer, but only one can be active. Each filter has an id and you can activate a filter by setting its id in BuildingSceneLayer.activeFilterId. This filter is then set on all the sublayers of the BuildingSceneLayer. -->
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="lang-js">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="grey">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-  }]
-</code>
-<code style="padding: 0px 50px;" class="lang-js">});
-</code>
-<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="lang-js">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="grey">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-  }]
-</code>
-<code style="padding: 0px 50px;" class="grey">});
-</code>
-<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="lang-js">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="grey">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-  }]
-</code>
-<code style="padding: 0px 50px;" class="grey">});
-</code>
-<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="lang-js">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-</code>
-<code style="padding: 0px 50px;" class="grey">  }]
-});
-</code>
-<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="lang-js">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-</code>
-<code style="padding: 0px 50px;" class="grey">  }]
-});
-</code>
-<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
-
-<img src="./images/wireframe.png" style="position: absolute; margin-left: 100px; padding: 30px; background: rgba(0,0,0,0.5);" alt="">
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="grey">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-</code>
-<code style="padding: 0px 50px;" class="grey">  }]
-});
-</code>
-<code style="padding: 0px 50px;" class="lang-js">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="grey">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
-
----
-<!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
-
-### [`BuildingFilter`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-
-<div class="code-snippet" style="font-size: 200%;"><pre ><code style="padding: 0px 50px;" class="grey">const buildingFilter = new BuildingFilter({
-</code>
-<code style="padding: 0px 50px;" class="grey">  filterBlocks: [{
-</code>
-<code style="padding: 0px 50px;" class="grey">    // an SQL expression that filters using the BldgLevel field
-    filterExpression: "BldgLevel = 3",
-</code>
-<code style="padding: 0px 50px;" class="grey">    filterMode: {
-      type: "solid" // "wire-frame" !!
-    }
-</code>
-<code style="padding: 0px 50px;" class="grey">  }]
-});
-</code>
-<code style="padding: 0px 50px;" class="grey">// set the filter in the filters array on the layer
-buildingLayer.filters = [buildingFilter];
-</code>
-<code style="padding: 0px 50px;" class="lang-js">// specify which filter is the one that should be applied
-buildingLayer.activeFilterId = buildingFilter.id;
-</code></pre></div>
 
 ---
 <!-- .slide: data-background="./images/bg-2.png" data-transition="fade" -->
